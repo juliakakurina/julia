@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My works </title>
+<style>
+  h2 {
+    color: ivory;
+  }
+
+ .image-border {
+        border: 2px groove; /* товщина, стиль та колір рамки */
+        border-top-color: Ivory;
+        padding: 5px; /* відступ всередині рамки */
+    }
+img {
+  display: block;
+  margin-left: auto;
+ 
+}
+.container {
+    display: flex;
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+}
+
+.image {
+    margin-right: 20px; /* Опціонально, для відступу між фото та текстом */
+}
+body {
+    background-color:#000000; /* Цвет текста */
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#fffff0; /* Цвет фона */
+
+  }
+
+  li {
+    float: left ;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #c2c4e5; /* Цвет фона при наведении */
+  }
+
+  p.ridge {border-style: ridge;}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="file:///C:/Users/user/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82/index.html.html">Привіт!</a></li>
+  <li><a href="file:///C:/Users/user/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82/%D0%A2%D1%83%D1%82%20%D0%BC%D0%BE%D1%94%20%D1%81%D0%B5%D1%80%D0%B4%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE.html#%D0%A2%D1%83%D1%82%20%D0%BC%D0%BE%D1%94%20%D1%81%D0%B5%D1%80%D0%B4%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE">Тут моє серденько</a></li>
+  <li><a href="file:///C:/Users/user/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82/%D0%9E%D1%81%D1%8C%20%D1%8F.html#%D0%9E%D1%81%D1%8C%20%D1%8F">Ось я</a></li>
+  <li><a href="file:///C:/Users/user/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D1%96.html">Соціальні мережі</a></li>
+</ul>
+
+
+ <div class="container">
+    <div class="image">
+     <img src="./фото_1.jpg" width="370" height="500"  class="image-border">
+    </div>
+    <div class="text">
+        <h1><p style="color: #fffff0;">Привіт любі!<a href="file:///C:/Users/user/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82/%D0%9E%D1%81%D1%8C%20%D1%8F.html#%D0%9E%D1%81%D1%8C%20%D1%8F">Познайомимось?</a></p></h1>
+    </div>
+</div> 
+
+<p><h2>Введіть свій номер телефону для замовлення фотосесії</h2></p>
+
+<input id="id1" type="number" required>
+<button onclick="myFunction()">Зв'яжіться зі мною</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  const inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+</script>
+
+</div>
+</body>
+</html>
